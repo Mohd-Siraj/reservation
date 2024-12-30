@@ -1,0 +1,86 @@
+.number-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  width: 29%;
+}
+
+.number-box {
+  text-align: center;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.seat-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.outer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 610px;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.seat-info p {
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px;
+}
+
+.booked-seats { background-color: #f2c30e; }
+.available-seats { background-color: #6daf44; }
+
+.booking-container button {
+  background-color: #4284cf;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.seat-input {
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.booking-info {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.train-booking-heading {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .outer-container {
+    display: grid;
+  }
+}
